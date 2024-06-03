@@ -1,24 +1,25 @@
-﻿using System.Text;
+﻿using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace IT3B_Kostky
+namespace DiceRoller
 {
- /// <summary>
- /// Interaction logic for MainWindow.xaml
- /// </summary>
- public partial class MainWindow : Window
- {
-  public MainWindow()
-  {
-   InitializeComponent();
-  }
- }
+    public partial class MainWindow : Window
+    {
+        private Random random = new Random();
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void RollDice_Click(object sender, RoutedEventArgs e)
+        {
+            Die1.Content = random.Next(1, 7).ToString();
+            Die2.Content = random.Next(1, 7).ToString();
+            Die3.Content = random.Next(1, 7).ToString();
+            Die4.Content = random.Next(1, 7).ToString();
+            Die5.Content = random.Next(1, 7).ToString();
+            Die6.Content = random.Next(1, 7).ToString();
+        }
+    }
 }
