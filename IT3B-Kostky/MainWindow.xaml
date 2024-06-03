@@ -19,12 +19,146 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Label x:Name="Die1" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"/>
-            <Label x:Name="Die2" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="1"/>
-            <Label x:Name="Die3" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="2"/>
-            <Label x:Name="Die4" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Row="1"/>
-            <Label x:Name="Die5" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Row="1" Grid.Column="1"/>
-            <Label x:Name="Die6" Content="1" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Row="1" Grid.Column="2"/>
+            <!-- Repeat for Dice 1 to Dice 6 -->
+            <!-- Example for Dice 1 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die1Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die1Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Repeat this block for Dice 2 to Dice 6, adjusting the x:Name attribute accordingly (Die2Dot1, Die2Dot2, etc.) -->
+            <!-- Dice 2 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die2Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die2Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Dice 3 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80" Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die3Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die3Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Dice 4 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die4Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die4Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Dice 5 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80" Grid.Row="1" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die5Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die5Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Dice 6 -->
+            <Border BorderBrush="Black" BorderThickness="2" Margin="10" Width="80" Height="80" Grid.Row="1" Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse x:Name="Die6Dot1" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot2" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot3" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot4" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot5" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot6" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Ellipse x:Name="Die6Dot7" Fill="Black" Visibility="Collapsed" Width="10" Height="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
         </Grid>
     </Grid>
 </Window>
